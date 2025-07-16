@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:prod="http://example.com/productservice">
+    <soap:Header>
+        <prod:RequestId>REQ-789012</prod:RequestId>
+        <prod:Timestamp>2024-12-20T14:22:30Z</prod:Timestamp>
+    </soap:Header>
+    <soap:Body>
+        <prod:GetProductResponse>
+            <prod:Product>
+                <prod:ProductId>PRD-12345</prod:ProductId>
+                <prod:Name>Wireless Bluetooth Headphones</prod:Name>
+                <prod:Description>Premium noise-cancelling wireless headphones with 30-hour battery life</prod:Description>
+                <prod:Brand>AudioTech</prod:Brand>
+                <prod:Category>Electronics</prod:Category>
+                <prod:Subcategory>Audio</prod:Subcategory>
+                <prod:Price>
+                    <prod:Amount>149.99</prod:Amount>
+                    <prod:Currency>USD</prod:Currency>
+                </prod:Price>
+            </prod:Product>
+        </prod:GetProductResponse>
+    </soap:Body>
+</soap:Envelope>
