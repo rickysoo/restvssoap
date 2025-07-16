@@ -1,3 +1,4 @@
-GET /customers/123
+GET /customers/123 HTTP/1.1
 Host: api.example.com
 Accept: application/json
+
