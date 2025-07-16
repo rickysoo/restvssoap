@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST vs SOAP API Showcase</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .desc { margin: 0 0 20px; font-style: italic; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>REST vs SOAP API Showcase</h1>
+    <p>This page presents example request and response snippets for REST and SOAP based services.</p>
+
+    <h2>REST Update Product Request</h2>
+    <pre id="rest-req"></pre>
+    <p class="desc">HTTP PUT request that updates product <code>ID123</code> by sending new details in JSON format.</p>
+
+    <h2>REST Update Product Response</h2>
+    <pre id="rest-res"></pre>
+    <p class="desc">Successful REST response confirming the product update.</p>
+
+    <h2>SOAP Update Product Request</h2>
+    <pre id="soap-req"></pre>
+    <p class="desc">SOAP envelope that sends product information to update an existing product.</p>
+
+    <h2>SOAP Update Product Response</h2>
+    <pre id="soap-res"></pre>
+    <p class="desc">SOAP reply showing the update succeeded.</p>
+
+    <h2>Get Customer Request (REST)</h2>
+    <pre id="rest-cust-req"></pre>
+    <p class="desc">Simple REST GET request to retrieve customer <code>123</code>.</p>
+
+    <h2>Get Customer Request (SOAP)</h2>
+    <pre id="soap-cust-req"></pre>
+    <p class="desc">SOAP call that requests details for customer <code>123</code>.</p>
+
+    <h2>Detailed Product Response (SOAP)</h2>
+    <pre id="soap-prod-res"></pre>
+    <p class="desc">Full product information returned by the SOAP service.</p>
+
+    <h2>Detailed Product Response (REST)</h2>
+    <pre id="rest-prod-res"></pre>
+    <p class="desc">Equivalent product details delivered by the REST API.</p>
+
+    <h2>Error Response (REST)</h2>
+    <pre id="rest-error"></pre>
+    <p class="desc">Example of a REST error message for a missing customer.</p>
+
+    <h2>Error Response (SOAP)</h2>
+    <pre id="soap-error"></pre>
+    <p class="desc">SOAP fault conveying the same customer-not-found error.</p>
+
+<script>
+// Utility function to load snippet contents
+function loadSnippet(id, file) {
+    fetch(file)
+        .then(response => response.text())
+        .then(text => {
+            document.getElementById(id).textContent = text.trim();
+        })
+        .catch(err => {
+            document.getElementById(id).textContent = 'Failed to load ' + file + ': ' + err;
+        });
+}
+
+loadSnippet('rest-req', 'codesnippet01.http');
+loadSnippet('rest-res', 'codesnippet02.http');
+loadSnippet('soap-req', 'codesnippet03.xml');
+loadSnippet('soap-res', 'codesnippet04.xml');
+loadSnippet('rest-cust-req', 'codesnippet05.http');
+loadSnippet('soap-cust-req', 'codesnippet06.xml');
+loadSnippet('soap-prod-res', 'codesnippet07.xml');
+loadSnippet('rest-prod-res', 'codesnippet08.http');
+loadSnippet('rest-error', 'codesnippet09.http');
+loadSnippet('soap-error', 'codesnippet10.xml');
+</script>
+</body>
+</html>
