@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:prod="http://example.com/products">
+    <soap:Header>
+        <auth:Authentication xmlns:auth="http://example.com/auth">
+            <auth:Username>user123</auth:Username>
+            <auth:Token>abc123token</auth:Token>
+        </auth:Authentication>
+    </soap:Header>
+    <soap:Body>
+        <prod:UpdateProd>
+            <prod:ProductId>P001</prod:ProductId>
+            <prod:ProductName>Laptop</prod:ProductName>
+            <prod:Price>999.99</prod:Price>
+            <prod:Quantity>50</prod:Quantity>
+        </prod:UpdateProd>
+    </soap:Body>
+</soap:Envelope>
