@@ -10,7 +10,7 @@
             <prod:Product>
                 <prod:ProductId>PRD-12345</prod:ProductId>
                 <prod:Name>Wireless Bluetooth Headphones</prod:Name>
-                <prod:Description>Premium noise-cancelling wireless headphones with 30-hour battery life</prod:Description>
+                <prod:Description>Premium noise-cancelling wireless headphones</prod:Description>
                 <prod:Brand>AudioTech</prod:Brand>
                 <prod:Category>Electronics</prod:Category>
                 <prod:Subcategory>Audio</prod:Subcategory>
