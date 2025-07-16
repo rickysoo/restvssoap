@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:cust="http://example.com/customer">
+    <soap:Body>
+        <cust:GetCustomer>
+            <cust:CustomerId>123</cust:CustomerId>
+        </cust:GetCustomer>
+    </soap:Body>
+</soap:Envelope>
+
