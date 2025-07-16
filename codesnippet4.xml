@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:prod="http://example.com/products">
+    <soap:Header/>
+    <soap:Body>
+        <prod:UpdateProdResult>
+            <prod:Success>true</prod:Success>
+            <prod:ProductId>P001</prod:ProductId>
+            <prod:Message>Product updated successfully</prod:Message>
+            <prod:UpdatedAt>2024-01-15T10:30:00Z</prod:UpdatedAt>
+        </prod:UpdateProdResult>
+    </soap:Body>
+</soap:Envelope>
