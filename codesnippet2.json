@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 358
+Server: Express/4.18.2
+
+{
+  "message": "Product updated successfully",
+  "product": {
+    "id": "ID123",
+    "name": "Wireless Bluetooth Headphones",
+    "price": 89.99,
+    "description": "Premium quality wireless headphones with noise cancellation",
+    "category": "Electronics",
+    "stock": 50,
+    "updatedAt": "2024-07-16T10:30:00.000Z"
+  }
+}
