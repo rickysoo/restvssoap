@@ -1,0 +1,13 @@
+PUT /api/product/ID123 HTTP/1.1
+Host: website.com
+Content-Type: application/json
+Content-Length: 196
+Authorization: Bearer your-auth-token
+
+{
+  "name": "Wireless Bluetooth Headphones",
+  "price": 89.99,
+  "description": "Premium quality wireless headphones with noise cancellation",
+  "category": "Electronics",
+  "stock": 50
+}
