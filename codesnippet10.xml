@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <soap:Fault>
+            <faultcode>Client</faultcode>
+            <faultstring>Customer not found</faultstring>
+            <faultactor>http://example.com/CustomerService</faultactor>
+            <detail>
+                <error xmlns="http://example.com/faults">
+                    <code>CUSTOMER_NOT_FOUND</code>
+                    <message>No customer exists with ID 999</message>
+                </error>
+            </detail>
+        </soap:Fault>
+    </soap:Body>
+</soap:Envelope>
